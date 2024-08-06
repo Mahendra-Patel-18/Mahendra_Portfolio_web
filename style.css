@@ -1,0 +1,601 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* Header and Navbar */
+#header {
+    width: 100%;
+    background: #000000;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #6C63FF;
+}
+
+
+#home {
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.leftSection p {
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+.leftSection .purple {
+    color: #8d87fd;
+}
+
+#element {
+    color:rgb(255, 218, 149);
+    font-size: 25px;
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+.resume {
+    margin: 30px 0;
+}
+
+.resume button {
+    padding: 10px 20px;
+    background: rgb(250, 223, 173);
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.resume button:hover {
+    background-color: #a9a5f2;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 80px;
+}
+
+.social-icons p {
+    color: wheat;
+    font-size: 20px;
+    margin: 0 20px 0 0; /* Add margin to the right of the text */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Add margin to the left and right of each icon */
+}
+
+.social-icons a img {
+    height: 30px;
+    width: 30px; /* Adjusted to make the icons square */
+}
+
+
+
+/* Skills Image Grid */
+.container-skill {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.container-skill img {
+    width: 70px;
+    height: 70px;
+    margin: 0 60px; /* Add margin to the left and right of each icon */
+    background: none;
+}
+
+/*About*/
+
+#about{
+    padding: 80px 0;
+    color:white;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+
+}
+
+.sub-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: wheat;
+}
+
+.about-col-2 p {
+    margin-top: 20px;
+    
+    text-align: justify; /* Distributes the text evenly across the line */
+    font-size: 18px;
+}
+
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+    color: wheat;
+
+}
+
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-link.active-link::after{
+    width: 80%;
+}
+
+.tab-contents {
+    margin: 10px 0;
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto; /* Adds vertical scrollbar if content overflows */
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Custom scrollbar styles */
+.tab-contents::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+.tab-contents::-webkit-scrollbar-thumb {
+    background: #fd6c6c; /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded edges for the scrollbar */
+}
+
+.tab-contents::-webkit-scrollbar-thumb:hover {
+    background:#ff004f; /* Color of the scrollbar on hover */
+}
+
+.tab-contents::-webkit-scrollbar-track {
+    background: #000000; /* Color of the track */
+}
+
+#contact {
+    background-color: #000000; /* Light background color */
+}
+
+#contact .container {
+    width: 100%;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: wheat;
+    margin-bottom: 30px; /* Add some space below the title */
+}
+
+.contact {
+    display: flex; /* Ensure flexbox is applied */
+    justify-content: space-around; /* Distribute space around items */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%;
+}
+
+.contact img {
+    display: block;
+    width: 10%;
+    height: 10%;
+}
+
+.contact a {
+    text-decoration: none; /* Remove underline from links */
+    color: wheat; /* Set link text color */
+    font-size: 16px; /* Set font size for link text */
+    text-align: center; /* Center align text */
+}
+
+.contact p {
+    margin: 5px 0 0 0; /* Adjust margins for the paragraphs */
+}
+
+#hireme {
+    background-color: #000;
+    padding: 100px;
+}
+
+#hireme .container {
+    width: 100%;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: wheat;
+    margin-bottom: 20px;
+}
+
+.hireme form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hireme form .input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hireme form input,
+.hireme form textarea {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ff4b4b;
+    border-radius: 15px;
+    font-size: 16px;
+    background: #000000;
+    color: white;
+
+}
+
+.hireme form textarea {
+    width: 40%;
+    height: 100px;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
+
+.hireme form button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1px solid #f67272;
+    background: wheat;
+    color: rgb(8, 8, 8);
+    font-size: small;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hireme form button:hover {
+    background-color: #a9a5f2;
+    font-size: medium;
+    border: none;
+    font-weight: bold;
+}
+
+
+nav .fas{
+    display: none;
+}
+
+
+@media only screen and (max-width: 660px) {
+        
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        cursor: pointer
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* or center, flex-end, etc. depending on your preference */
+        align-items: center;
+        background: #212020;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 120px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+        
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        cursor: pointer;
+    }
+
+    
+    #home {
+            margin-top: 20px;
+            padding: 20px 10px;
+        }
+    
+        .leftSection p {
+            font-size: 20px;
+            margin: 0 5px;
+        }
+    
+        #element {
+            font-size: 20px;
+            margin: 0 5px;
+        }
+    
+        .resume {
+            margin: 20px 0;
+        }
+    
+        .resume button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    
+        .social-icons {
+            flex-wrap: nowrap; /* Ensure icons stay in a single row */
+            overflow-x: auto; /* Allow horizontal scrolling if necessary */
+            margin-top: 40px;
+        }
+    
+        .social-icons p {
+            font-size: 15px;
+            margin: 0 0 3px 0;
+        }
+    
+        .social-icons a {
+            margin: 10px;
+        }
+    
+        .social-icons a img {
+            height: 20px;
+            width: 20px;
+        }
+    
+        .container-skill img {
+            width: 40px;
+            height: 40px;
+            margin: 10px 20px;
+        }
+
+
+        #about {
+            padding: 40px 10px;
+        }
+    
+        .row {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .about-col-1, .about-col-2 {
+            flex-basis: 100%;
+            text-align: center; /* Center text for better mobile display */
+        }
+    
+        .about-col-1 img {
+            width: 80%; /* Reduce image size for mobile view */
+            margin: 0 auto; /* Center the image */
+            border-radius: 15px;
+        }
+    
+        .sub-title {
+            font-size: 30px;
+            text-align: center;
+        }
+    
+        .about-col-2 p {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+    
+        .tab-title {
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px 0;
+        }
+    
+        .tab-link {
+            margin: 10px 0;
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        .tab-link::after {
+            width: 0;
+        }
+    
+        .tab-link.active-link::after {
+            width: 50%;
+        }
+    
+        .tab-contents {
+            max-height: 150px;
+            text-align: justify; /* Distributes the text evenly across the line */
+
+        }
+    
+        .tab-contents ul li span {
+            font-size: 12px;
+            list-style: none;
+        }
+    
+        .tab-contents::-webkit-scrollbar {
+            width: 0px;
+        }
+
+
+            #contact {
+                padding: 20px 10px; /* Add some padding for better spacing */
+            }
+        
+            .sub-title {
+                font-size: 24px; /* Reduce font size for smaller screens */
+                text-align: center;
+                margin-bottom: 20px; /* Reduce margin for smaller screens */
+            }
+        
+            .contact {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center align items */
+                text-align: center; /* Center align text */
+            }
+        
+            .contact img {
+                width: 20px; /* Set a fixed width for the image */
+                height: 20px; /* Set a fixed height for the image */
+                margin-bottom: 10px; /* Add some space below the image */
+            }
+        
+            .contact a {
+                font-size: 14px; /* Reduce font size for smaller screens */
+                margin-bottom: 10px; /* Add some space below each link */
+            }
+        
+            .contact p {
+                font-size: 14px; /* Reduce font size for paragraphs */
+                margin: 20px 0; /* Adjust margins for paragraphs */
+            }
+        
+        
+            #hireme {
+                padding: 50px 10px; /* Reduce padding for smaller screens */
+            }
+        
+            .sub-title {
+                font-size: 24px; /* Reduce font size for smaller screens */
+                margin-bottom: 15px; /* Adjust margin for smaller screens */
+            }
+        
+            .hireme form {
+                width: 100%; /* Make form take full width */
+                padding: 0 10px; /* Add some padding for better spacing */
+            }
+        
+            .hireme form .input-group {
+                flex-direction: column; /* Stack input fields vertically */
+                width: 100%; /* Make input group take full width */
+            }
+        
+            .hireme form input,
+            .hireme form textarea {
+                width: 100%; /* Make input fields take full width */
+                margin: 5px 0; /* Adjust margin for input fields */
+                padding: 10px; /* Keep consistent padding */
+                font-size: 14px; /* Reduce font size for smaller screens */
+            }
+        
+            .hireme form textarea {
+                height: 100px; /* Keep consistent height */
+            }
+        
+            .hireme form button {
+                padding: 10px 20px; /* Keep consistent padding */
+                margin-top: 20px; /* Keep consistent margin */
+                font-size: small; /* Keep font size small */
+            }
+
+        }
+
+
+

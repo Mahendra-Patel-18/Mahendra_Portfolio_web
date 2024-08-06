@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./mahendrafavicon.jpeg">
+    <link rel="shortcut icon" href="./img/self.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Mahendra's Portfolio</title>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo" style="color: rgb(227, 194, 134);">Mahendra-18</div>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hireme">Hire Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div id="home">
+                <div class="leftSection">
+                    <p>Namaste,</p>
+                    <p>I'm <span class="purple">Mahendra Patel</span> a passionate <br><span
+                            id="element"></span><br>based in
+                        Ahmedabad India</p>
+                    <div class="resume">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <button>Download CV</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-skill">
+                    <img src="./img/html.jpeg" alt="">
+                    <img src="./img/css.jpeg" alt="">
+                    <img src="./img/javascript.jpeg" alt="">
+                    <img src="./img/python.jpeg" alt="">
+                    <img src="./img/django.png" alt="">
+                    <img src="./img/bootstrap.jpeg" alt="">
+                    <img src="./img/git.jpeg" alt="">
+                    <img src="./img/github.jpeg" alt="">
+                    <img src="./img/vscode.png" alt="">
+                </div>
+
+                <div class="social-icons">
+                    <p>Let's Get Social</p>
+                    <a href="https://www.instagram.com/_mahendra.18_?igsh=YzllMWlkeWM1NG5r" target="_blank">
+                        <img src="./img/instagram.png" alt="Instagram" title="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mahendrajay18/" target="_blank">
+                        <img src="./img/linkedin.png" alt="LinkedIn" title="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Mahendra-Patel-18" target="_blank">
+                        <img src="./img/github.jpeg" alt="GitHub" title="GitHub">
+                    </a>
+                    <a href="https://x.com/Mahendra_125?t=VFZCI2xzoucmKH-Hfn3tIg&s=09" target="_blank">
+                        <img src="./img/x.png" alt="Twitter" title="Twitter">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--About-->
+
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img/self.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">who am i ?</h1>
+                    <p>I'm Mahendra Patel, a versatile and collaborative developer focused on creating seamless web
+                        and cross-platform solutions. With a passion for learning, I share my journey and innovations
+                        publicly, showcasing my problem-solving skills. In my projects, I combine creativity and coding
+                        to deliver excellent results. Dedicated to staying at the cutting edge of technology, I embrace
+                        challenges as opportunities to grow and make meaningful contributions to the development world.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-link" onclick="opentab('Achievement')">Achievement</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>2024 - 2026</span><br>MCA at Silver Oak University Ahmedabad</li><br><br>
+                            <li><span>2021 - 2024</span><br>BCA at GLS University Ahmedabad</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Fresher</span><br><br>None</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li>
+                                <span>Worker Hiring</span><br><br>
+                                "Worker Hiring Platform" is designed to connect job seekers with employment
+                                opportunities based on hourly rates.
+                                This platform enables workers to browse and apply for a variety of jobs, while users
+                                have the ability to book workers for specific tasks.
+                                The project aims to create a seamless and efficient system for matching available
+                                workers with relevant job opportunities,
+                                thereby enhancing the overall user experience for both job seekers and
+                                employers.<br><br>
+                                Tech Stack: HTML, CSS, JavaScript, PHP, MySQL, Bootstrap<br><br>
+                                <a href="https://github.com/Mahendra-Patel-18/worker-hiring" target="_blank">View on
+                                    GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Achievement">
+                        <ul>
+                            <li><span>None</span><br><br>None</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <p class="sub-title">Contact</p>
+            <div class="contact">
+                <div>
+                    <img src="./img/map.png" class="img1" alt="location">
+                    <a href="https://maps.app.goo.gl/4BDCq4qk5n2Jdt8Z9" class="address">
+                        <p>Ahmedabad, Gujarat</p>
+                    </a>
+                </div>
+                <div>
+                    <img src="./img/gmail.png" class="img2" alt="email">
+                    <a href="mailto:mahendrajay18@gmail.com" class="email">
+                        <p>mahendrajay18@gmail.com</p>
+                    </a>
+                </div>
+                <div>
+                    <img src="./img/telephone.png" class="img3" alt="phone">
+                    <a href="tel:+918302319745" class="number">
+                        <p>+918302319745</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hireme">
+        <div class="container">
+            <p class="sub-title">Query / Hire Me</p>
+            <div class="hireme">
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="98fdf9ec-ca8f-4391-b209-6660e0b81d70">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Name:" required>
+                        <input type="email" id="email" name="email" placeholder="Email:" required>
+                    </div>
+                    <textarea name="message" id="message" rows="6" placeholder="Write Your Message !"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        AOS.init({
+            offset: 10, // offset (in px) from the original trigger point
+            duration: 1000
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Python Developer', 'Full Stack Developer'],
+            typeSpeed: 40,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
