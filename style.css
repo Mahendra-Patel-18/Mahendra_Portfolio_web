@@ -8,7 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
-/* General Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -17,7 +17,7 @@ body {
     background-color: black;
 }
 
-/* Header and Navbar */
+
 #header {
     width: 100%;
     background: #000000;
@@ -70,7 +70,7 @@ nav ul li a:hover {
 .leftSection p {
     font-size: 25px;
     color: #ffffff;
-    margin: 0 10px; /* Adjust margin as needed */
+    margin: 0 10px;
 }
 
 .leftSection .purple {
@@ -80,7 +80,7 @@ nav ul li a:hover {
 #element {
     color:rgb(255, 218, 149);
     font-size: 25px;
-    margin: 0 10px; /* Adjust margin as needed */
+    margin: 0 10px;
 }
 
 .resume {
@@ -102,29 +102,26 @@ nav ul li a:hover {
 
 .social-icons {
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    align-items: center; 
     margin-top: 80px;
 }
 
 .social-icons p {
     color: wheat;
     font-size: 20px;
-    margin: 0 20px 0 0; /* Add margin to the right of the text */
+    margin: 0 20px 0 0; 
 }
 
 .social-icons a {
-    margin: 0 10px; /* Add margin to the left and right of each icon */
+    margin: 0 10px; 
 }
 
 .social-icons a img {
     height: 30px;
-    width: 30px; /* Adjusted to make the icons square */
+    width: 30px; 
 }
 
-
-
-/* Skills Image Grid */
 .container-skill {
     display: block;
     justify-content: center;
@@ -136,7 +133,7 @@ nav ul li a:hover {
 .container-skill img {
     width: 70px;
     height: 70px;
-    margin: 0 60px; /* Add margin to the left and right of each icon */
+    margin: 0 60px; 
     background: none;
 }
 
@@ -180,7 +177,7 @@ nav ul li a:hover {
 .about-col-2 p {
     margin-top: 20px;
     
-    text-align: justify; /* Distributes the text evenly across the line */
+    text-align: justify; 
     font-size: 18px;
 }
 
@@ -216,8 +213,8 @@ nav ul li a:hover {
 
 .tab-contents {
     margin: 10px 0;
-    max-height: 200px; /* Adjust the height as needed */
-    overflow-y: auto; /* Adds vertical scrollbar if content overflows */
+    max-height: 200px; 
+    overflow-y: auto; 
 }
 
 .tab-contents ul li span {
@@ -235,24 +232,24 @@ nav ul li a:hover {
 
 /* Custom scrollbar styles */
 .tab-contents::-webkit-scrollbar {
-    width: 8px; /* Set the width of the scrollbar */
+    width: 8px; 
 }
 
 .tab-contents::-webkit-scrollbar-thumb {
-    background: #fd6c6c; /* Color of the scrollbar */
-    border-radius: 10px; /* Rounded edges for the scrollbar */
+    background: #fd6c6c; 
+    border-radius: 10px; 
 }
 
 .tab-contents::-webkit-scrollbar-thumb:hover {
-    background:#ff004f; /* Color of the scrollbar on hover */
+    background:#ff004f; 
 }
 
 .tab-contents::-webkit-scrollbar-track {
-    background: #000000; /* Color of the track */
+    background: #000000; 
 }
 
 #contact {
-    background-color: #000000; /* Light background color */
+    background-color: #000000; 
 }
 
 #contact .container {
@@ -266,13 +263,13 @@ nav ul li a:hover {
     font-size: 30px;
     font-weight: 600;
     color: wheat;
-    margin-bottom: 30px; /* Add some space below the title */
+    margin-bottom: 30px; 
 }
 
 .contact {
-    display: flex; /* Ensure flexbox is applied */
-    justify-content: space-around; /* Distribute space around items */
-    align-items: center; /* Align items vertically in the center */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
     width: 100%;
 }
 
@@ -283,14 +280,14 @@ nav ul li a:hover {
 }
 
 .contact a {
-    text-decoration: none; /* Remove underline from links */
-    color: wheat; /* Set link text color */
-    font-size: 16px; /* Set font size for link text */
-    text-align: center; /* Center align text */
+    text-decoration: none; 
+    color: wheat; 
+    font-size: 16px; 
+    text-align: center; 
 }
 
 .contact p {
-    margin: 5px 0 0 0; /* Adjust margins for the paragraphs */
+    margin: 5px 0 0 0; 
 }
 
 #hireme {
@@ -380,7 +377,7 @@ nav .fas{
     nav ul {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; /* or center, flex-end, etc. depending on your preference */
+        justify-content: flex-start; 
         align-items: center;
         background: #212020;
         position: fixed;
@@ -432,8 +429,8 @@ nav .fas{
         }
     
         .social-icons {
-            flex-wrap: nowrap; /* Ensure icons stay in a single row */
-            overflow-x: auto; /* Allow horizontal scrolling if necessary */
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
             margin-top: 40px;
         }
     
@@ -470,12 +467,12 @@ nav .fas{
     
         .about-col-1, .about-col-2 {
             flex-basis: 100%;
-            text-align: center; /* Center text for better mobile display */
+            text-align: center; 
         }
     
         .about-col-1 img {
-            width: 80%; /* Reduce image size for mobile view */
-            margin: 0 auto; /* Center the image */
+            width: 80%; 
+            margin: 0 auto; 
             border-radius: 15px;
         }
     
@@ -511,7 +508,7 @@ nav .fas{
     
         .tab-contents {
             max-height: 150px;
-            text-align: justify; /* Distributes the text evenly across the line */
+            text-align: justify; 
 
         }
     
@@ -526,73 +523,73 @@ nav .fas{
 
 
             #contact {
-                padding: 20px 10px; /* Add some padding for better spacing */
+                padding: 20px 10px; 
             }
         
             .sub-title {
-                font-size: 24px; /* Reduce font size for smaller screens */
+                font-size: 24px; 
                 text-align: center;
-                margin-bottom: 20px; /* Reduce margin for smaller screens */
+                margin-bottom: 20px; 
             }
         
             .contact {
-                flex-direction: column; /* Stack items vertically */
-                align-items: center; /* Center align items */
-                text-align: center; /* Center align text */
+                flex-direction: column;
+                align-items: center;
+                text-align: center; 
             }
         
             .contact img {
-                width: 20px; /* Set a fixed width for the image */
-                height: 20px; /* Set a fixed height for the image */
-                margin-bottom: 10px; /* Add some space below the image */
+                width: 20px; 
+                height: 20px; 
+                margin-bottom: 10px; 
             }
         
             .contact a {
-                font-size: 14px; /* Reduce font size for smaller screens */
-                margin-bottom: 10px; /* Add some space below each link */
+                font-size: 14px; 
+                margin-bottom: 10px; 
             }
         
             .contact p {
-                font-size: 14px; /* Reduce font size for paragraphs */
-                margin: 20px 0; /* Adjust margins for paragraphs */
+                font-size: 14px; 
+                margin: 20px 0; 
             }
         
         
             #hireme {
-                padding: 50px 10px; /* Reduce padding for smaller screens */
+                padding: 50px 10px;
             }
         
             .sub-title {
-                font-size: 24px; /* Reduce font size for smaller screens */
-                margin-bottom: 15px; /* Adjust margin for smaller screens */
+                font-size: 24px; 
+                margin-bottom: 15px; 
             }
         
             .hireme form {
-                width: 100%; /* Make form take full width */
-                padding: 0 10px; /* Add some padding for better spacing */
+                width: 100%; 
+                padding: 0 10px; 
             }
         
             .hireme form .input-group {
-                flex-direction: column; /* Stack input fields vertically */
-                width: 100%; /* Make input group take full width */
+                flex-direction: column; 
+                width: 100%; 
             }
         
             .hireme form input,
             .hireme form textarea {
-                width: 100%; /* Make input fields take full width */
-                margin: 5px 0; /* Adjust margin for input fields */
-                padding: 10px; /* Keep consistent padding */
-                font-size: 14px; /* Reduce font size for smaller screens */
+                width: 100%; 
+                margin: 5px 0; 
+                padding: 10px; 
+                font-size: 14px; 
             }
         
             .hireme form textarea {
-                height: 100px; /* Keep consistent height */
+                height: 100px; 
             }
         
             .hireme form button {
-                padding: 10px 20px; /* Keep consistent padding */
-                margin-top: 20px; /* Keep consistent margin */
-                font-size: small; /* Keep font size small */
+                padding: 10px 20px; 
+                margin-top: 20px; 
+                font-size: small; 
             }
 
         }
