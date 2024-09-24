@@ -486,13 +486,12 @@ nav .fas{
         }
         
         .container-skill img {
-            margin-top: 15px;
             width: 25px;
             height: 25px;
-            margin: 5px;
+            margin: 5px; 
             background: none;
             animation: moveUpDown 1.5s infinite alternate;
-            margin-bottom: 25px;
+            margin-bottom: 50px;
         }
         
         .container-skill img:nth-child(even) {
