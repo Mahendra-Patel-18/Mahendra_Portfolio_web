@@ -122,19 +122,49 @@ nav ul li a:hover {
     width: 30px; 
 }
 
+.social-icons a img:hover , .contact img:hover, .container-skill img:hover {
+   transform: translate(0, -10%);
+   cursor: pointer;
+}
+
 .container-skill {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Use flex to keep it horizontally aligned */
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Aligns the items vertically in the center */
     flex-wrap: wrap;
     margin-top: 70px;
 }
 
 .container-skill img {
-    width: 70px;
-    height: 70px;
-    margin: 0 60px; 
+    width: 50px;
+    height: 50px;
+    margin: 20px; /* Adjust the margin for spacing between icons */
     background: none;
+    animation: moveUpDown 1.5s infinite alternate; /* Adding up-down animation */
+    margin-bottom: 50px;
+}
+
+.container-skill img:nth-child(even) {
+    animation: moveDownUp 1.5s infinite alternate; /* Reverse the animation for even images */
+}
+
+/* Keyframe animations for up-down movement */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    100% {
+        transform: translateY(50px); /* Moves 50px down */
+    }
+}
+
+@keyframes moveDownUp {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    100% {
+        transform: translateY(-50px); /* Moves 50px up */
+    }
 }
 
 /*About*/
@@ -448,10 +478,44 @@ nav .fas{
             width: 20px;
         }
     
+        .container-skill {
+            display: flex; /* Use flex to keep it horizontally aligned */
+            justify-content: center; /* Centers the images horizontally */
+            align-items: center; /* Aligns the items vertically in the center */
+            flex-wrap: wrap;
+            margin-top: 70px;
+        }
+        
         .container-skill img {
-            width: 40px;
-            height: 40px;
-            margin: 10px 20px;
+            width: 25px;
+            height: 30px;
+            margin: 10px; /* Adjust the margin for spacing between icons */
+            background: none;
+            animation: moveUpDown 1.5s infinite alternate; /* Adding up-down animation */
+            margin-bottom: 40px;
+        }
+        
+        .container-skill img:nth-child(even) {
+            animation: moveDownUp 1.5s infinite alternate; /* Reverse the animation for even images */
+        }
+        
+        /* Keyframe animations for up-down movement */
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0); /* Starting position */
+            }
+            100% {
+                transform: translateY(50px); /* Moves 50px down */
+            }
+        }
+        
+        @keyframes moveDownUp {
+            0% {
+                transform: translateY(0); /* Starting position */
+            }
+            100% {
+                transform: translateY(-50px); /* Moves 50px up */
+            }
         }
 
 
@@ -593,6 +657,3 @@ nav .fas{
             }
 
         }
-
-
-
